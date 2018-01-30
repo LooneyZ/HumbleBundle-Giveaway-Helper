@@ -9,6 +9,8 @@
 // @include      https://www.humblebundle.com/receipt*
 // @include      https://www.humblebundle.com/emailhelper*
 // @include      https://www.humblebundle.com/user/humbleguard*
+// @updateURL    https://raw.githubusercontent.com/LooneyZ/HumbleBundle-Giveaway-Helper/master/humbleGiveawayHelper.user.js
+// @downloadURL  https://raw.githubusercontent.com/LooneyZ/HumbleBundle-Giveaway-Helper/master/humbleGiveawayHelper.user.js
 // @grant        none
 // ==/UserScript==
 
