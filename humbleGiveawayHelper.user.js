@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Humble Giveaway Helper
 // @namespace    http://tampermonkey.net/
-// @version      0.0.2
+// @version      0.0.3
 // @description  Get keys from HumbleBundle faster
 // @author       Looney
 // @match        https://www.humblebundle.com/store/*
@@ -54,26 +54,30 @@
         document.getElementsByClassName("cart")[0].click();
         document.getElementsByClassName("store-free-payment-button")[0].click();
     }
-    function f2(){
-        //document.getElementsByClassName("blue button")[2].click();
-        var c = document.getElementsByClassName("blue button");
-        var k = false;
-        for(var i = 0; i< c.length; i++){
-            if(c[i].innerHTML === "Preview your Email"){
-                k = true;
-                c[i].click();
+	
+	function f2(){
+        var bluebuttons = document.getElementsByClassName("blue button-v2");
+        var isFound = false;
+        for(var i = 0; i< bluebuttons.length; i++){
+            if(bluebuttons[i].innerHTML === "Preview your Email"){
+                isFound = true;
+                bluebuttons[i].click();
                 break;
             }
         }
-        if(!k) setTimeout(f2,1000);
+        if(!isFound) setTimeout(f2,1000);
     }
+	
+	
     function f3(){
         document.getElementsByName("order-link-btn")[0].getElementsByTagName('a')[0].click();
     }
-    function f4(){
-        document.getElementsByClassName("sr-unredeemed-button-text")[0].click();
+	
+	function f4(){
+        document.getElementsByClassName("keyfield-value")[0].click();
         f5();
     }
+	
     function f5(){
         if(typeof document.getElementsByClassName("steam-redeem-text")[0] !== 'undefined'){
             document.getElementsByClassName("steam-redeem-text")[0].click();
