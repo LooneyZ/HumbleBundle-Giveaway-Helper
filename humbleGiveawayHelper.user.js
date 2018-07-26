@@ -70,12 +70,18 @@
 	
 	
     function f3(){
-        document.getElementsByName("order-link-btn")[0].getElementsByTagName('a')[0].click();
+		if(typeof document.getElementsByName("order-link-btn")[0] !== 'undefined'){
+            document.getElementsByName("order-link-btn")[0].getElementsByTagName('a')[0].click();
+        }
+        else setTimeout(f3,1000);
     }
 	
 	function f4(){
-        document.getElementsByClassName("keyfield-value")[0].click();
-        f5();
+		if(typeof document.getElementsByClassName("keyfield-value")[0] !== 'undefined'){
+            document.getElementsByClassName("keyfield-value")[0].click();
+			f5();
+        }
+        else setTimeout(f4,1000);
     }
 	
     function f5(){
