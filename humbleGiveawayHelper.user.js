@@ -70,8 +70,8 @@
 	
 	
     function f3(){
-		if(typeof document.getElementsByName("order-link-btn")[0] !== 'undefined'){
-            document.getElementsByName("order-link-btn")[0].getElementsByTagName('a')[0].click();
+		if(typeof document.getElementsByClassName("order-link-btn")[0] !== 'undefined'){
+            document.getElementsByClassName("order-link-btn")[0].getElementsByTagName('a')[0].click();
         }
         else setTimeout(f3,1000);
     }
