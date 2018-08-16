@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Humble Giveaway Helper
 // @namespace    http://tampermonkey.net/
-// @version      0.0.3
+// @version      0.0.4
 // @description  Get keys from HumbleBundle faster
 // @author       Looney
 // @match        https://www.humblebundle.com/store/*
